@@ -1,0 +1,83 @@
+.App {
+    background-color: #1abc9c;
+    height: 100%;
+    height: 100vh;
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: lightblue;
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 2rem;
+        margin: 0;
+    }
+    .App-inner {
+        padding: 1rem;
+        .row {
+            display: flex;
+            justify-content: space-around;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                padding: 1rem;
+            }
+        }
+        .preview {
+            border: 3px solid black;
+            width: 45%;
+            height: 100%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .preview-header {
+                background-color: #f39c12;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                h2 {
+                    margin: 0;
+                    padding: 1rem;
+                }
+            }
+            .preview-textarea {
+                height: 500px;
+                padding: .5rem;
+                textarea {
+                    width: 98%;
+                    height: 100%;
+                    padding: 0 .2rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .editor {
+            border: 3px solid black;
+            width: 45%;
+            height: 100%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .editor-header {
+                background-color: #f39c12;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                h2 {
+                    margin: 0;
+                    padding: 1rem;
+                }
+            }
+            .editor-textarea {
+                max-height: 500px;
+                padding: .5rem;
+                overflow-y: auto;
+                .editor-textarea-inner {
+                    width: 100%;
+                    height: 100%;
+                    min-height: 500px;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
